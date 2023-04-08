@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="bg-base-200">
       <Layout>
         <footer
-          className=" mt-20 p-10 text-base-content rounded"
+          className="p-10 py-20 text-base-content rounded"
           style={{ backgroundImage: `url('/public/images/bg-footer.png')` }}
         >
           <div className="flex justify-between ">
