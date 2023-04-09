@@ -13,6 +13,7 @@
     "flowbite": "^1.6.4",
     "flowbite-react": "^0.4.3",
     "next": "13.2.4",
+    "next-auth": "^4.21.1",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
