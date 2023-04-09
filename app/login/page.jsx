@@ -2,29 +2,29 @@
 import Image from 'next/image';
 import React from 'react';
 import Layout from '../components/Layout';
-import {signIn} from "next-auth/react"
+import { signIn } from "next-auth/react"
 
 
 const Page = () => {
-    const handleSubmit=async(e)=>{
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        const email=e.target.email.value;
-        const password=e.target.password.value;
-        
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
         try {
             const data = await signIn("credentials", {
-              redirect: false,
-              email,
-              password,
+                redirect: false,
+                email,
+                password,
             });
-      
+
             console.log(data);
-          } catch (error) {
+        } catch (error) {
             console.log(error);
-          }
-        
+        }
+
     }
-  
+
     return (
         <div className='py-20'>
             <Layout>
@@ -45,7 +45,7 @@ const Page = () => {
                         </div>
                         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                             <form onSubmit={handleSubmit} className="card-body">
-                                <div  className="form-control">
+                                <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Email</span>
                                     </label>
