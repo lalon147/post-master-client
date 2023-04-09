@@ -18,7 +18,7 @@ const DarkModeSwitch = () => {
       {mounted &&
         (currentTheme === "dark" ? (
           <MdLightMode
-            className="cursor-pointer"
+            className="cursor-pointer text-white"
             onClick={() => setTheme("light")}
           />
         ) : (

@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <Providers>
           {/* Navbar */}
           <Navbar></Navbar>
-          <div className='fixed top-1/3 bg-slate-500 px-4 py-2 w-15 h-10 right-0 rounded-l-lg border-2 dark:bg-yellow-400 justify-start items-center'>
+          <div className='fixed top-1/3 bg-slate-500 px-4 py-2 w-15 h-10 right-0 rounded-l-lg border-2 dark:bg-yellow-400 flex justify-start items-center'>
             <DarkModeSwitch></DarkModeSwitch>
           </div>
           {children}
