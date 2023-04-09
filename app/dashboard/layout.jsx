@@ -1,14 +1,14 @@
 import React from 'react';
-import Navbar from './Navbar';
+import Navbar from './DashboardNavbar';
 
-const Layout = () => {
+const Layout = ({children}) => {
     return (
         <div className='flex'>
-            <div className='bg-base-200 lg:w-2/12 min-h-screen'>
+            <div className='lg:w-2/12 min-h-screen border-r-2'>
                 <Navbar></Navbar>
             </div>
-            <div className='flex-1  bg-blue-400 '>
-                Dashboard
+            <div className='flex-1 p-5'>
+               {children}
             </div>
         </div>
     );

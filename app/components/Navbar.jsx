@@ -15,16 +15,75 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-          <div className="flex gap-5 text-white items-center">
-            <MenuItems title="HOME" address="/"></MenuItems>
-            <MenuItems title="ABOUT" address="/about" ></MenuItems>
-            <MenuItems title="SERVICES" address="/services" ></MenuItems>
-            <MenuItems title="LOGIN" address="/login" ></MenuItems>
-            <MenuItems title="SIGN UP" address="/signup" ></MenuItems>
-            <DarkModeSwitch />
+          <div>
+            <div className="dropdown lg:hidden">
+              <label tabIndex={0} className="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <MenuItems address="/" title="HOME"></MenuItems>
+                </li>
+                <li>
+                  <MenuItems address="/about" title="ABOUT"></MenuItems>
+                </li>
+                <li>
+                  <MenuItems address="/services" title="SERVICES"></MenuItems>
+                </li>
+              </ul>
+            </div>
+            <div className="navbar-center hidden lg:flex">
+              <ul className="menu menu-horizontal px-1">
+                <li>
+                  <MenuItems address="/" title="HOME"></MenuItems>
+                </li>
+                <li>
+                  <MenuItems address="/about" title="ABOUT"></MenuItems>
+                </li>
+                <li>
+                  <MenuItems address="/services" title="SERVICES"></MenuItems>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="flex gap-5 text-white items-center">
-            <MenuItems title="Dashboard" address="/dashboard" ></MenuItems>
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                <div class="w-10 rounded-full">
+                  <img src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" />
+                </div>
+              </label>
+              <ul
+                tabindex="0"
+                class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-pink-300 dark:bg-slate-500 rounded-box w-52"
+              >
+                <li>
+                  <MenuItems title="Dashboard" address="/dashboard"></MenuItems>
+                </li>
+                <li>
+                  <MenuItems title="LOGIN" address="/login"></MenuItems>
+                </li>
+                <li>
+                  <a>Logout</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </Layout>
