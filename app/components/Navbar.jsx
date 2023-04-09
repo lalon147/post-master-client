@@ -5,7 +5,7 @@ import DarkModeSwitch from "./DarkMoodSwitch";
 
 const Navbar = () => {
   return (
-    <div className="bg-blue-800 py-5">
+    <div className="dark:bg-[#0b1120] bg-success py-5 fixed top-0 w-full z-50">
       <Layout>
         <div className="flex justify-between items-center py-3 max-w-7xl sm:m-auto px-2 ">
           <div className="flex items-center">
@@ -71,7 +71,7 @@ const Navbar = () => {
               </label>
               <ul
                 tabindex="0"
-                class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-pink-300 dark:bg-slate-500 rounded-box w-52"
+                class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-success dark:bg-slate-500 rounded-box w-52"
               >
                 <li>
                   <MenuItems title="Dashboard" address="/dashboard"></MenuItems>
