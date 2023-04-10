@@ -1,6 +1,6 @@
 import React from 'react';
-import MenuItems from '../components/MenuItems';
-// import MenuItems from "../components/dashboard/Menuitem";
+// import MenuItems from '../components/MenuItems';
+import MenuItems from "../components/dashboard/Menuitem";
 
 const DashboardNavbar = () => {
   return (
@@ -14,11 +14,9 @@ const DashboardNavbar = () => {
           />
         </div>
         <div>
-          <MenuItems title='Profile' address='/dashboard/profile'></MenuItems>
-          <MenuItems title='Profile' address='/dashboard/profile'></MenuItems>
-          <MenuItems title='Profile' address='/dashboard/profile'></MenuItems>
-          <MenuItems title='Profile' address='/dashboard/profile'></MenuItems>
-          <MenuItems title='Profile' address='/dashboard/profile'></MenuItems>
+          <MenuItems title='Admin' address='/dashboard/admin'></MenuItems>
+          <MenuItems title='Seller' address='/dashboard/seller'></MenuItems>
+          <MenuItems title='Dellivary Man' address='/dashboard/delivary-man'></MenuItems>
         </div>
       </div>
       <div className='h-20'></div>
