@@ -2,6 +2,7 @@ import React from 'react';
 // import MenuItems from '../components/MenuItems';
 import MenuItems from "../components/dashboard/Menuitem";
 
+
 const DashboardNavbar = () => {
   return (
     <div className='p-2 flex flex-col justify-items-center'>
@@ -17,6 +18,7 @@ const DashboardNavbar = () => {
           <MenuItems title='Admin' address='/dashboard/admin'></MenuItems>
           <MenuItems title='Seller' address='/dashboard/seller'></MenuItems>
           <MenuItems title='Dellivary Man' address='/dashboard/delivary-man'></MenuItems>
+
         </div>
       </div>
       <div className='h-20'></div>
