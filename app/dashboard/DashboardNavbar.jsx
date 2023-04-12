@@ -17,12 +17,7 @@ const DashboardNavbar = () => {
         <div>
           <MenuItems title='Admin' address='/dashboard/admin'></MenuItems>
           <MenuItems title='Seller' address='/dashboard/seller'></MenuItems>
-<<<<<<< HEAD
           <MenuItems title='Delivery Man' address='/dashboard/delivery-man'></MenuItems>
-=======
-          <MenuItems title='Dellivary Man' address='/dashboard/delivary-man'></MenuItems>
-
->>>>>>> af0ffe4906341f6456250d780e5dbd4c127f9bb6
         </div>
       </div>
       <div className='h-20'></div>
