@@ -2,6 +2,7 @@ import Link from "next/link";
 import Layout from "./Layout";
 import MenuItems from "./MenuItems";
 
+
 const Navbar = () => {
   return (
     <div className="dark:bg-[#0b1120] bg-success py-5 fixed top-0 w-full z-50">
@@ -58,6 +59,7 @@ const Navbar = () => {
                 <li>
                   <MenuItems address="/services" title="SERVICES"></MenuItems>
                 </li>
+
               </ul>
             </div>
           </div>

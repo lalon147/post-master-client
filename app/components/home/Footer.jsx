@@ -3,9 +3,9 @@ import Layout from '../Layout';
 
 const Footer = () => {
   return (
-    <div className='bg-success'>
+    <div className='dark:bg-[#0b1120] bg-success'>
       <Layout>
-        <footer className='footer p-10 bg-success text-white '>
+        <footer className='footer p-10 dark:bg-[#0b1120] bg-success text-white '>
           <div>
             <span className='font-bold text-2xl  '>Services</span>
             <a className='link link-hover '>Courier</a>

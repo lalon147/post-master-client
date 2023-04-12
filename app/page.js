@@ -6,6 +6,7 @@ import Calculator from './components/home/Calculator';
 import FAQS from './components/home/FAQS';
 import Services from './components/home/Services';
 import Testimonials from './components/home/Testimonial';
+import Posts from './components/home/Posts';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Brands></Brands>
       <Services></Services>
       <Calculator></Calculator>
+      <Posts></Posts>
       <Testimonials></Testimonials>
       <FAQS></FAQS>
     </main>
