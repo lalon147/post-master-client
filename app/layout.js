@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import './../styles/globals.css'
 import DarkModeSwitch from './components/DarkMoodSwitch'
 import Footer from './components/home/Footer'
@@ -12,6 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme='light'>
+      <Head>
+
+      </Head>
       <body>
         <Providers>
           {/* Navbar */}

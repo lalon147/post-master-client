@@ -16,7 +16,7 @@ const DashboardNavbar = () => {
         <div>
           <MenuItems title='Admin' address='/dashboard/admin'></MenuItems>
           <MenuItems title='Seller' address='/dashboard/seller'></MenuItems>
-          <MenuItems title='Dellivary Man' address='/dashboard/delivary-man'></MenuItems>
+          <MenuItems title='Delivery Man' address='/dashboard/delivery-man'></MenuItems>
         </div>
       </div>
       <div className='h-20'></div>
