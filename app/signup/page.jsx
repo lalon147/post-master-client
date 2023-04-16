@@ -1,12 +1,11 @@
 "use client";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import React from "react";
 import Layout from "../components/Layout";
 
 const page = () => {
-  
-
+const router = useRouter()
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -28,6 +27,7 @@ const page = () => {
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        router.push('/dashboard');
       });
   };
 

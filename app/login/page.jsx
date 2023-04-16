@@ -3,9 +3,11 @@ import Image from 'next/image';
 import React from 'react';
 import Layout from '../components/Layout';
 import { signIn } from "next-auth/react"
+import { useRouter } from 'next/navigation';
 
 
 const Page = () => {
+const router = useRouter();
     const handleSubmit = async (e) => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -19,6 +21,7 @@ const Page = () => {
             });
 
             console.log(data);
+            router.push('/');
         } catch (error) {
             console.log(error);
         }
