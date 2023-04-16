@@ -2,7 +2,6 @@ import Link from "next/link";
 import Layout from "./Layout";
 import MenuItems from "./MenuItems";
 
-
 const Navbar = () => {
   return (
     <div className="dark:bg-[#0b1120] bg-success py-5 fixed top-0 w-full z-50">
@@ -59,19 +58,18 @@ const Navbar = () => {
                 <li>
                   <MenuItems address="/services" title="SERVICES"></MenuItems>
                 </li>
-
               </ul>
             </div>
           </div>
           <div className="flex gap-5 text-white items-center">
             <div className="dropdown dropdown-end">
-              <label tabindex="0" className="btn btn-ghost btn-circle avatar">
+              <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
                 <div className="w-10 rounded-full">
                   <img src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" />
                 </div>
               </label>
               <ul
-                tabindex="0"
+                tabIndex="0"
                 className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-success dark:bg-slate-500 rounded-box w-52"
               >
                 <li>
