@@ -5,11 +5,15 @@ import Layout from '../Layout';
 
 const Posts=()=>{
      const [posts,setPosts]=useState([]);
+     const [page,setPage]=useState(1);
+     const [count,setCount]=useState(20)
+     const  pages= Math.ceil(count/6)
     useEffect(()=>{
            
-        fetch("http://localhost:5000/api/v1/posts/all")
+        fetch(`http://localhost:5000/api/v1/posts/all?page=${page}`)
         .then((response)=>response.json()).then((data)=>{
             console.log(data);
+            setCount(data.length);
             setPosts(data)
          });
     },[])
@@ -43,6 +47,15 @@ const Posts=()=>{
                 }) : <h1>NOTHING</h1>
                }
                   </div>
+                   <div className='flex justify-center'>
+                   <div className="pagination ">
+                    {
+                      [...Array(pages).keys()].map((number) => {
+                        return <button onClick={()=>setPage(number)} className={` ${page===number? "btn-primary" :"bg-success" } btn mx-1 my-5`} key={number}>{number}</button>
+                      })
+                    }
+                  </div>
+                   </div>
         </Layout>
      )
 }

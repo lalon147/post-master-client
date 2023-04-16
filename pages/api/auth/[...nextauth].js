@@ -10,7 +10,7 @@ const authOptions={
         CredentialsProvider({
          async authorize(credentials,req){
             const {email,password}=credentials
-
+             
             if(email!=="lalon@gmail.com" || password!=="1234"){
                 throw new Error("EMAIL OR PASSWORD DID NOT")
             }
