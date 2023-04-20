@@ -3,7 +3,7 @@ import './../styles/globals.css'
 import DarkModeSwitch from './components/DarkMoodSwitch'
 import Footer from './components/home/Footer'
 import Navbar from './components/Navbar'
-import FacebookChat from './fb-chat/facebook'
+// import FacebookChat from './fb-chat/facebook'
 import Providers from './Provider'
 
 export const metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
           </div>
           {children}
 
-          <FacebookChat></FacebookChat>
+          {/* <FacebookChat></FacebookChat> */}
           {/* Footer */}
           <Footer />
         </Providers>
