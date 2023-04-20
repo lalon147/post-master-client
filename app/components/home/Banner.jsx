@@ -7,12 +7,12 @@ const Banner = () => {
   return (
     <Layout>
       <div className='carousel w-full min-h-screen'>
-        <div id='slide1' className='carousel-item relative w-full min-h-screen'>
+        <div id='slide1' className='carousel-item relative w-full min-h-[75%]'>
           <Image
-            className='min-h-screen'
+            className='h-52'
             src='/images/imageBanner.png'
-            width={200}
-            height={200}
+            width={600}
+            height={400}
             layout='responsive'
             alt='pic'
           />
@@ -25,12 +25,12 @@ const Banner = () => {
             </Link>
           </div>
         </div>
-        <div id='slide2' className='carousel-item relative w-full min-h-screen'>
+        <div id='slide2' className='carousel-item relative w-full min-h-[75%]'>
           <Image
-            className='min-h-screen'
+            className='h-52'
             src='/images/BannerImage2.png'
-            width={200}
-            height={200}
+            width={600}
+            height={400}
             layout='responsive'
             alt='pic'
           />
@@ -43,12 +43,12 @@ const Banner = () => {
             </Link>
           </div>
         </div>
-        <div id='slide3' className='carousel-item relative w-full min-h-screen'>
+        <div id='slide3' className='carousel-item relative w-full min-h-[75%]'>
           <Image
-            className='min-h-screen'
+            className='h-52'
             src='/images/BannerImage4.png'
-            width={200}
-            height={200}
+            width={600}
+            height={400}
             layout='responsive'
             alt='pic'
           />
@@ -61,12 +61,12 @@ const Banner = () => {
             </Link>
           </div>
         </div>
-        <div id='slide4' className='carousel-item relative w-full min-h-screen'>
+        <div id='slide4' className='carousel-item relative w-full min-h-[75%]'>
           <Image
-            className='min-h-screen'
+            className='h-52'
             src='/images/BannerImage2.png'
-            width={200}
-            height={200}
+            width={600}
+            height={400}
             layout='responsive'
             alt='pic'
           />
